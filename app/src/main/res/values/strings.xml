@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TwitterDemo</string>
+    <string name="twitter_api_key">PdRZJm9MqJrQKtQ7HXcun9Zbv</string>
+    <string name="twitter_api_secret">Rz1RYTxMgfxhsxKEMesXHaZrZJPBh49rysm79HTXyYn8uL2VD8</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_hometime_line">Home TimeLine</string>
+</resources>

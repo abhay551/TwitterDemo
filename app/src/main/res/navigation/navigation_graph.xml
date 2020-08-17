@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.abhay.twitterdemo.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/loginFragmentToHomeTimelineFragment"
+            app:destination="@id/homeTimelineFragment"
+            app:popUpTo="@layout/login_fragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+             />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeTimelineFragment"
+        android:name="com.abhay.twitterdemo.ui.hometimeline.HomeTimelineFragment"
+        android:label="HomeTimelineFragment"
+        tools:layout="@layout/home_timeline_fragment" />
+</navigation>
